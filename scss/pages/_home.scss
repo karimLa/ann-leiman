@@ -1,0 +1,48 @@
+.landing {
+  padding: 6rem;
+  margin-left: 6rem;
+
+  &__heading {
+    font-size: 7rem;
+    font-weight: 400;
+    line-height: 6rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    font-family: sans;
+    letter-spacing: .8rem;
+  }
+
+  &__subheading {
+    font-size: 4rem;
+    color: #766e60;
+    text-transform: uppercase;
+    font-family: sans;
+  }
+
+  &__text {
+    width: 40%;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 4rem;
+    color: rgb(24, 20, 20);
+  }
+
+  &__cta {
+    background-color: #766e60;
+    color: #fff;
+    text-decoration: none;
+    width: 20rem;
+    text-align: center;
+    padding: 1rem 6rem;
+    font-weight: 600;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    border-radius: 2px;
+    transition: all .2s;
+  }
+
+  &__cta:hover {
+    color: #766e60;
+    background-color: #fff;
+  }
+}

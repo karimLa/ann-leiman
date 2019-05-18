@@ -1,0 +1,9 @@
+.header {
+  height: calc(100vh - 8.5rem);
+  background-image: linear-gradient(to right bottom, rgba(119, 113, 113, 0.774), rgba(37, 35, 31, 0.24)), url("/img/ann-2.jpg");
+  background-size: cover;
+  background-position: right;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}

@@ -1,0 +1,39 @@
+.center-text {
+  text-align: center !important;
+}
+
+.mt-8 {
+  margin-top: 8rem !important;
+  @include mq(tp) {
+    margin-top: 6rem !important;
+  }
+}
+
+.mt-10 {
+  margin-top: 10rem !important;
+  @include mq(tp) {
+    margin-top: 8rem !important;
+  }
+}
+
+.mb-2 {
+  margin-bottom: 2rem !important;
+  @include mq(tp) {
+    margin-bottom: 1rem !important;
+  }
+}
+
+.mb-4 {
+  margin-bottom: 4rem !important;
+
+  @include mq(tp) {
+    margin-bottom: 3rem !important;
+  }
+}
+
+.mb-8 {
+  margin-bottom: 8rem !important;
+  @include mq(tp) {
+    margin-bottom: 6rem !important;
+  }
+}

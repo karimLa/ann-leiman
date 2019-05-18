@@ -1,0 +1,87 @@
+.nav {
+  display: flex;
+  background-color: #fff;
+  align-items: center;
+  height: 8.5rem;
+
+
+  &__logo-box {
+    flex: 0 0 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left: 3rem;
+    @include mq(tl) {
+      flex: 0 0 10%;
+    }
+
+    @include mq(bd) {
+      flex: 0 0 8%;
+    }
+
+  }
+
+  &__logo {
+    font-family: 'Lobster', cursive;
+    a {
+      font-size: 2.6rem;
+      font-weight: 300;
+      text-decoration: none;
+      color: black;
+    }
+  }
+
+  &__menu {
+    flex: 1;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  &__item {
+    &:not(:last-child) {
+      margin-right: 6rem;
+
+      @include mq(tl) {
+        margin-right: 3rem;
+      }
+      
+    }
+  }
+
+  &__link,
+  &__link:link,
+  &__link:visited {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.6rem;
+    color: rgb(184, 179, 179);
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  &__link:hover,
+  &__link:active {
+    color: rgb(138, 132, 132);
+  }
+
+  &__icon-box {
+    flex: 0 0 20%;
+    display: flex;
+    justify-content: space-evenly;
+
+    @include mq(bd) {
+      flex: 0 0 15%;
+    }
+  }
+  
+  &__icon {
+    font-size: 1.6rem;
+    cursor: pointer;
+
+    // &:not(:last-child) {
+    //   margin-right: 6rem;
+    // }
+  }
+}
