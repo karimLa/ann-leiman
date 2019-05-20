@@ -1,0 +1,123 @@
+.about {
+  background: white;
+  display: flex;
+  justify-content: center;
+  padding: 8rem;
+  font-family: sans;
+  
+  @include mq(phone) {
+    flex-direction: column;
+  }
+
+  &__portrait {
+    flex: 0 0 10%;
+    height: 30rem;
+    position: relative;
+
+    &::after {
+      content: '';
+      display: table;
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 29.8rem;
+      width: 3px;
+      background: #f8f8f5;
+
+      @include mq(phone) {
+        height: 10rem;
+        right: initial;
+        left: 0;
+      }
+    }
+  }
+
+  &__img-box {
+    width: 100%;
+    text-align: center;
+
+    @include mq(phone) {
+      text-align: left;
+      margin-left: 2rem;
+    }
+  }
+  
+  &__img {
+    margin-right: 2rem;
+    border-radius: 200px;
+    width: 10rem;
+    height: 10rem;
+  }
+
+  &__caption {
+    color: #aaa49b;
+    font-size: 1.2rem;
+    transform: rotate(-90deg);
+    position: absolute;
+    bottom: 30px;
+    right: -20px;
+
+    @include mq(phone) {
+      font-size: 1rem;
+      right: initial;
+      top: 10px;
+      bottom: -10px;
+    }
+  }
+
+  &__textual {
+    margin-left: 2rem;
+  }
+
+  &__subheader {
+    color: #aaa49b;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    line-height: 1;
+    font-weight: 500;
+  }
+  
+  &__header {
+    text-transform: uppercase;
+    line-height: 1.4;
+    letter-spacing: 6px;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+  }
+
+  &__paragraph {
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    margin-bottom: 3rem;
+  }
+
+  &__icons {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  &__icon {
+    background-color: #f8f8f5;
+    fill: #a89f91;
+    width: 120px;
+    height: 120px;
+    padding: 2.5rem;
+  
+    svg {
+      width: 60%;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__icon-title {
+    margin-top: .4rem;
+    color: #a89f91;
+    font-size: 1.1rem;
+  }
+}
